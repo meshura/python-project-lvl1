@@ -1,0 +1,13 @@
+name: pyci
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pyci1
+        run: make lint
