@@ -1,10 +1,5 @@
 name: pyci
-on:
-  push:
-    branches:
-      - '**'
-    tags:
-      - '**'
+on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
