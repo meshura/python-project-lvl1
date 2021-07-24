@@ -4,7 +4,6 @@ from brain_games import cli
 from brain_games import logic
 
 
-
 def game_2():
     cli.hello()
     print("Hello, " + cli.name + "!")
@@ -15,7 +14,8 @@ def game_2():
         random_number2 = randint(1, 100)
         string = '*+-'
         char = choice(string)
-        print('Question: ' + str(random_number1) + ' ' + char + ' ' + str(random_number2))
+        example = "Question: {} {} {}"
+        print(example.format(str(random_number1), str(char), str(random_number2)))
         answer = prompt.string('Your answer: ')
         if char == '*':
             question = random_number1 * random_number2

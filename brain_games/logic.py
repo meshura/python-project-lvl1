@@ -2,5 +2,6 @@ def logic(answer, question):
     if str(answer) == str(question):
         return 'Correct!'
     else:
-        print("'" + str(answer) + "'" + " is wrong answer ;(. Correct answer was " +  "'" + str(question) + "'.")
+        bad_answer = "'{}' is wrong answer ;(. Correct answer was '{}'."
+        print(bad_answer.format(str(answer), str(question)))
         return None
