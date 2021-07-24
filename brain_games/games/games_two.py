@@ -14,8 +14,8 @@ def game_2():
         random_number2 = randint(1, 100)
         string = '*+-'
         char = choice(string)
-        example = "Question: {} {} {}"
-        print(example.format(str(random_number1), str(char), str(random_number2)))
+        exam = "Question: {} {} {}"
+        print(exam.format(str(random_number1), str(char), str(random_number2)))
         answer = prompt.string('Your answer: ')
         if char == '*':
             question = random_number1 * random_number2
