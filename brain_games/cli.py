@@ -9,4 +9,4 @@ def welcome_user():
 
 
 def hello():
-    print("Hello, " + name + "!")
+    return ("Hello, " + welcome_user() + "!")
