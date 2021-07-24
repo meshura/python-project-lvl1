@@ -1,6 +1,7 @@
 import prompt
 from random import randint
 from brain_games import cli
+from brain_games import logic
 
 
 def game_1():
@@ -13,13 +14,10 @@ def game_1():
         print('Question: ', random_number)
         answer = prompt.string('Your answer: ')
         if random_number % 2 == 0:
-            question = 'yes'            
+            question = 'yes'
         elif random_number % 2 > 0:
             question = 'no'
-        if answer == question:
-            print('Correct!')
-        else:
-            print("'" + answer + "'" + " is wrong answer ;(. Correct answer was " +  "'" + question + "'.")
+        if logic.logic(answer, question) is None:
             return "Let's try again, " + cli.name
         i += 1
     return 'Congratulations, ' + cli.name + '!'

@@ -1,6 +1,8 @@
 import prompt
 from random import choice, randint
 from brain_games import cli
+from brain_games import logic
+
 
 
 def game_2():
@@ -16,15 +18,12 @@ def game_2():
         print('Question: ' + str(random_number1) + ' ' + char + ' ' + str(random_number2))
         answer = prompt.string('Your answer: ')
         if char == '*':
-            question = random_number1 * random_number2            
+            question = random_number1 * random_number2
         elif char == '+':
-            question = random_number1 + random_number2  
+            question = random_number1 + random_number2
         elif char == '-':
-            question = random_number1 - random_number2 
-        if str(answer) == str(question):
-            print('Correct!')
-        else:
-            print("'" + str(answer) + "'" + " is wrong answer ;(. Correct answer was " +  "'" + str(question) + "'.")
+            question = random_number1 - random_number2
+        if logic.logic(answer, question) is None:
             return "Let's try again, " + cli.name
         i += 1
     return 'Congratulations, ' + cli.name + '!'
