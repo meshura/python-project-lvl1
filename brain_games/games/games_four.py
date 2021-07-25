@@ -4,6 +4,17 @@ from brain_games import cli
 from brain_games import logic
 
 
+def listToString(inList):
+    outString = ''
+    if len(inList) == 1:
+        outString = outString + str(inList[0])
+    if len(inList) > 1:
+        outString = outString + str(inList[0])
+        for items in inList[1:]:
+            outString = outString + ' ' + str(items)
+    return outString
+
+
 def game_4():
     cli.hello()
     print("Hello, " + cli.name + "!")
@@ -18,7 +29,7 @@ def game_4():
         question = prog.pop(shadow_number)
         prog.insert(shadow_number, '..')
         exam = "Question: {}"
-        print(exam.format(str(prog)[1:-1]))
+        print(exam.format(listToString(prog)))
         answer = prompt.string('Your answer: ')
         if logic.logic(answer, question) is None:
             return "Let's try again, " + cli.name + "!"
