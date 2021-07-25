@@ -11,7 +11,7 @@ def game_1():
     i = 0
     while i < 3:
         random_number = randint(1, 100)
-        print('Question: ', random_number)
+        print('Question:', random_number)
         answer = prompt.string('Your answer: ')
         if random_number % 2 == 0:
             question = 'yes'
