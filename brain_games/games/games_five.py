@@ -22,7 +22,8 @@ def game_5():
     print("Hello, " + cli.name + "!")
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
-    while i < 3:
+    steps = 3
+    while i < steps:
         number = randint(1, 3571)
         question = game5_logic(number)
         exam = "Question: {}"

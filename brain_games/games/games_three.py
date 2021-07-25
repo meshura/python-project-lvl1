@@ -31,7 +31,8 @@ def game_3():
     print("Hello, " + cli.name + "!")
     print('Find the greatest common divisor of given numbers.')
     i = 0
-    while i < 3:
+    steps = 3
+    while i < steps:
         random_number1_1 = randint(1, 100)
         random_number2_2 = randint(1, 100)
         question = game3_logic_1(random_number1_1, random_number2_2)

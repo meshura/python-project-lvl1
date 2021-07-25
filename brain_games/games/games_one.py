@@ -9,7 +9,8 @@ def game_1():
     print("Hello, " + cli.name + "!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
-    while i < 3:
+    steps = 3
+    while i < steps:
         random_number = randint(1, 100)
         print('Question:', random_number)
         answer = prompt.string('Your answer: ')

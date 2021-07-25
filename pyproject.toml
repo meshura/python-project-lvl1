@@ -4,8 +4,13 @@ packages = [
 ]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Study project for https://ru.hexlet.io/"
 authors = ["Meshura <shtraus@inbox.ru>"]
+repository = "https://github.com/meshura/python-project-lvl1.git"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"

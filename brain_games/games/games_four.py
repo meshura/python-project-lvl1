@@ -20,7 +20,8 @@ def game_4():
     print("Hello, " + cli.name + "!")
     print('What number is missing in the progression?')
     i = 0
-    while i < 3:
+    steps = 3
+    while i < steps:
         start_prog = randint(1, 20)
         increase_prog = randint(1, 10)
         stop_prog = start_prog + (10 * increase_prog)

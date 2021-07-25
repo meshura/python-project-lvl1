@@ -9,7 +9,8 @@ def game_2():
     print("Hello, " + cli.name + "!")
     print('What is the result of the expression?')
     i = 0
-    while i < 3:
+    steps = 3
+    while i < steps:
         random_number1 = randint(1, 100)
         random_number2 = randint(1, 100)
         string = '*+-'
