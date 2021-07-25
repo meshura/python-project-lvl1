@@ -24,6 +24,6 @@ def game_2():
         elif char == '-':
             question = random_number1 - random_number2
         if logic.logic(answer, question) is None:
-            return "Let's try again, " + cli.name
+            return "Let's try again, " + cli.name + "!"
         i += 1
     return 'Congratulations, ' + cli.name + '!'

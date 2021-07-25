@@ -18,6 +18,6 @@ def game_1():
         elif random_number % 2 > 0:
             question = 'no'
         if logic.logic(answer, question) is None:
-            return "Let's try again, " + cli.name
+            return "Let's try again, " + cli.name + "!"
         i += 1
     return 'Congratulations, ' + cli.name + '!'

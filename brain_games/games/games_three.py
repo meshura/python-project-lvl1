@@ -39,6 +39,6 @@ def game_3():
         print(exam.format(str(random_number1_1), str(random_number2_2)))
         answer = prompt.string('Your answer: ')
         if logic.logic(answer, question) is None:
-            return "Let's try again, " + cli.name
+            return "Let's try again, " + cli.name + "!"
         i += 1
     return 'Congratulations, ' + cli.name + '!'
