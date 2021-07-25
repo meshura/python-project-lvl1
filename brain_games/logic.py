@@ -1,5 +1,6 @@
 def logic(answer, question):
     if str(answer) == str(question):
+        print('Correct!')
         return 'Correct!'
     else:
         bad_answer = "'{}' is wrong answer ;(. Correct answer was '{}'."
